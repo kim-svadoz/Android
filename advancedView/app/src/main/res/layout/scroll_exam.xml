@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fillViewport="true">
+            <ImageView
+                android:id="@+id/myimg01"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:visibility="visible"
+               android:src="@drawable/dream01"/>
+    </ScrollView>
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btnexam01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="upclick"
+                    android:text="▲"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnexam02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="downclick"
+                    android:text="▼"
+                    android:textSize="30sp" />
+                </TableRow>
+            </TableLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fillViewport="true">
+            <ImageView
+                android:id="@+id/myimg02"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:visibility="visible"
+                android:src="@drawable/dream02"/>
+    </ScrollView>
+</LinearLayout>
