@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mylist_data">
+        <item>보라돌이</item>
+        <item>뚜비</item>
+        <item>나나</item>
+        <item>뽀</item>
+        <item>피카츄</item>
+        <item>라이츄</item>
+        <item>파이리</item>
+        <item>꼬부기</item>
+        <item>버터풀</item>
+        <item>야도란</item>
+        <item>피존투</item>
+        <item>또가스</item>
+        <item>서로생긴</item>
+        <item>모습은</item>
+        <item>달라도</item>
+        <item>우리는모두</item>
+        <item>친구!</item>
+        <item>아자!</item>
+        <item>산에서</item>
+        <item>들에서</item>
+    </string-array>
+</resources>
