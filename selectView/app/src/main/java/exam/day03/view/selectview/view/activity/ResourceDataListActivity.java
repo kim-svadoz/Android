@@ -1,4 +1,4 @@
-package exam.day03.view.selectview;
+package exam.day03.view.selectview.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
+
+import exam.day03.view.selectview.R;
 
 public class ResourceDataListActivity extends AppCompatActivity {
     ListView listview;

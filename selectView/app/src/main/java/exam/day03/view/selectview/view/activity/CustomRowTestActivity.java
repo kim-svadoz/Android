@@ -1,15 +1,19 @@
-package exam.day03.view.selectview;
+package exam.day03.view.selectview.view.activity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+
+import exam.day03.view.selectview.R;
 
 public class CustomRowTestActivity extends AppCompatActivity {
     //1. ListView에 출력할 데이터 - 커스텀row로 리스트뷰를 구성하는 경우
@@ -41,6 +45,14 @@ public class CustomRowTestActivity extends AppCompatActivity {
         //이벤트연결
         MyListener listener = new MyListener();
         listview.setOnItemClickListener(listener);
+
+        Button custBtn = findViewById(R.id.btncust);
+        custBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("test","반응있을까요?");
+            }
+        });
     }
     class MyListener implements AdapterView.OnItemClickListener{
         @Override
