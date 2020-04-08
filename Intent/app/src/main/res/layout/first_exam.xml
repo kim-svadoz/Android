@@ -1,54 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".exam.ExamFirstActivity">
+
     <TextView
+        android:id="@+id/infotxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="이름과 전화번호를 입력하세요."/>
+        android:text="이름과전화번호를 입력하세요"/>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/nameinfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="이름: "/>
         <EditText
-            android:id="@+id/EditText01"
+            android:id="@+id/nameedit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="홍길동"/>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/telinfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="전화번호: "/>
         <EditText
-            android:id="@+id/EditText02"
+            android:id="@+id/teledit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="010-123-4567"/>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
     <Button
-        android:id="@+id/Button01"
+        android:id="@+id/inputbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="입력 완료"/>
-    <Button
-        android:id="@+id/Button02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="객체 공유"/>
     <TextView
-        android:id="@+id/first_return"
+        android:id="@+id/resultinfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="결과:"
-        />
+        android:text="결과 : "/>
+
+
+
 </LinearLayout>

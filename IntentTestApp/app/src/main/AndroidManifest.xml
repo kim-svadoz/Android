@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="exam.day03.view.selectview">
+    package="multi.exam.view.intenttestapp">
 
     <application
         android:allowBackup="true"
@@ -9,26 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--
-            SelectView_ExamActivity를 등록
-              => intent-filter를 이용해서 action을 정의
-
-        -->
-        <activity android:name=".exam.SelectView_ExamActivity">
+        <activity android:name=".OpenActivity">
             <intent-filter>
                 <action android:name="com.exam.selectview"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-
-        <activity android:name=".view.activity.ListViewTestActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
