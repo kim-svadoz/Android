@@ -6,12 +6,13 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import multi.android.support_lib.R;
 
-public class MainViewPagerActivity extends AppCompatActivity {
+public class FragmentExam01 extends AppCompatActivity {
     OneFragment oneFragment = new OneFragment();
     TwoFragment twoFragment = new TwoFragment();
     ThreeFragment threeFragment = new ThreeFragment();
@@ -19,7 +20,7 @@ public class MainViewPagerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_pager_main);
+        setContentView(R.layout.linear02);
 
         Button btn1 = findViewById(R.id.button);
         Button btn2 = findViewById(R.id.button2);
@@ -46,7 +47,9 @@ public class MainViewPagerActivity extends AppCompatActivity {
     }
 
     public void setFragment(String name){
+        Log.d("fragment",name);
         FragmentManager fragmentManager = getSupportFragmentManager();
+        //프래그먼트의 변화를 관리하는 객체
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         switch (name){
             case "one":
