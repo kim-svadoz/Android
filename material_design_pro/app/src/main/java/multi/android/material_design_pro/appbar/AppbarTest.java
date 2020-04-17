@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
@@ -30,6 +31,8 @@ public class AppbarTest extends AppCompatActivity {
     FloatingActionButton fab;
     ListView listView;
     ArrayList<String> datalist = new ArrayList<String>();
+
+    BottomAppBar bottomAppBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,17 +40,22 @@ public class AppbarTest extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         app_bar_image = findViewById(R.id.app_bar_image);
         toolbarLayout = findViewById(R.id.toolbar_layout);
+
         listView = findViewById(R.id.mylistview);
         fab = findViewById(R.id.fab);
         //앱바 이미지 변경
         app_bar_image.setImageResource(R.drawable.lee);
-
+        bottomAppBar = findViewById(R.id.bottom_bar);
         //1. Appbar에 텍스트 추가, 변경
         toolbar.setTitle("툴바입니다.");
         toolbarLayout.setCollapsedTitleTextColor(Color.CYAN);
         toolbarLayout.setExpandedTitleColor(Color.WHITE);
         toolbarLayout.setCollapsedTitleGravity(Gravity.CENTER);
         toolbarLayout.setExpandedTitleGravity(Gravity.RIGHT+Gravity.TOP);
+
+        bottomAppBar.setFabAlignmentMode(BottomAppBar.FAB_ALIGNMENT_MODE_CENTER);
+        bottomAppBar.setFabCradleRoundedCornerRadius(100); // 라운드 주기
+        bottomAppBar.setFabCradleMargin(20); //button이랑 bottomAppbar랑 중간에 마진
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
                 android.R.id.text1, datalist);

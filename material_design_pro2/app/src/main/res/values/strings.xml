@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">material_design_pro2</string>
+    <string name="oepn_str">Open_toggle</string>
+    <string name="close_str">Close_toggle</string>
+</resources>
