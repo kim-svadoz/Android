@@ -1,3 +1,4 @@
+/*
 package multi.android.material_design_pro2.drawer;
 
 import androidx.annotation.NonNull;
@@ -53,3 +54,4 @@ public class DrawerTest extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+*/

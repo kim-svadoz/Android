@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HandlerExam">
+    tools:context=".HandlerExam2">
 
     <TextView
         android:id="@+id/textView"
@@ -19,7 +19,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="useMessageHandler"
+        android:onClick="btn_click"
         android:text="숫자 출력하기"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
