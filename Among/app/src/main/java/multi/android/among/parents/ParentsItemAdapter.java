@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,9 +38,9 @@ public class ParentsItemAdapter extends RecyclerView.Adapter<ParentsItemAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        CircleImageView img = holder.img;
-        TextView txt_view = holder.txtview;
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
+        final CircleImageView img = holder.img;
+        final TextView txt_view = holder.txtview;
 
         txt_view.setText(data.get(position).getText());
         img.setImageResource(data.get(position).getImg());
@@ -47,9 +48,14 @@ public class ParentsItemAdapter extends RecyclerView.Adapter<ParentsItemAdapter.
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "데이터연결완료", Toast.LENGTH_LONG).show();
+                Context context = v.getContext();
+                Intent intent = new Intent(v.getContext(), Parents02.class);
+                intent.putExtra("name", txt_view.toString());
+                context.startActivity(intent);
+                Toast.makeText(context, position+"번째 아이템 클릭", Toast.LENGTH_LONG).show();
             }
         });
+
     }
 
     @Override
@@ -65,5 +71,7 @@ public class ParentsItemAdapter extends RecyclerView.Adapter<ParentsItemAdapter.
             txtview = itemView.findViewById(R.id.text);
             img = itemView.findViewById(R.id.farentsitemview);
         }
+
     }
+
 }

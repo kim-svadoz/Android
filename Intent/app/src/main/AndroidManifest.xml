@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".UseOtehrApp"></activity>
-        <activity android:name=".exam.ExamFirstActivity" />
+        <!--<activity android:name=".exam.ExamFirstActivity" />-->
         <activity android:name=".ReturnDataFirstActivity" />
         <activity android:name=".exam.ExamSecondActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ReturnDataSecondActivity" />
         <activity android:name=".SecondActivity" />
-        <activity android:name=".BasicAppRun">
+        <activity android:name=".exam.ExamFirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
