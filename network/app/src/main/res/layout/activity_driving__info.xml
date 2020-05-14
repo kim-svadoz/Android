@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".miri.Driving_Info"
+    android:id="@+id/driving_info"
+    android:background="@drawable/driving_info">
+
+    <Button
+        android:id="@+id/driving_enter"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:text="무인주행 입장"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+        android:textColor="@color/white"
+        android:fontFamily="@font/driving_info"
+        android:background="@drawable/driving_menu_info"
+        android:layout_marginBottom="200dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

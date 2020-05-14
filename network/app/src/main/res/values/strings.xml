@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">network</string>
+    <string name="drive_left">&lt;</string>
+    <string name="drive_right">&gt;</string>
 </resources>

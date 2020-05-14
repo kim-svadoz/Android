@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="multi.android.network">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,8 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true"> <!--우리는 HTTP밖에 만들 수 없으니까...-->
-        <activity android:name=".tcp.ChatClientActivity02">
+        android:usesCleartextTraffic="true">
+        <activity android:name=".miri.Driving"/>
+        <!-- <activity android:name=".miri.Driving"></activity> -->
+        <!-- 우리는 HTTP밖에 만들 수 없으니까... -->
+        <activity android:name=".miri.Driving_Info">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
