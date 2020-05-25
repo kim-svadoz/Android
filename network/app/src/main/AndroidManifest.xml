@@ -15,7 +15,7 @@
         <activity android:name=".miri.Driving"/>
         <!-- <activity android:name=".miri.Driving"></activity> -->
         <!-- 우리는 HTTP밖에 만들 수 없으니까... -->
-        <activity android:name=".miri.Driving_Info">
+        <activity android:name=".iot.IoTClientActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

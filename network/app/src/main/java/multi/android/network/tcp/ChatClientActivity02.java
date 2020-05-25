@@ -1,7 +1,5 @@
 package multi.android.network.tcp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
@@ -13,6 +11,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -112,7 +112,7 @@ public class ChatClientActivity02 extends AppCompatActivity {
         @Override
         protected String doInBackground(Integer... integers) {
             try {
-                socket = new Socket("70.12.116.59", 12345);
+                socket = new Socket("70.12.230.200", 12345);
                 if(socket!=null){
                     ioWork();
                 }
